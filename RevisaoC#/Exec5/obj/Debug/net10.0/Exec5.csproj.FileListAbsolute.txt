@@ -1,0 +1,15 @@
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\bin\Debug\net10.0\Exec5.exe
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\bin\Debug\net10.0\Exec5.deps.json
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\bin\Debug\net10.0\Exec5.runtimeconfig.json
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\bin\Debug\net10.0\Exec5.dll
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\bin\Debug\net10.0\Exec5.pdb
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.AssemblyInfoInputs.cache
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.AssemblyInfo.cs
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.csproj.CoreCompileInputs.cache
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.sourcelink.json
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.dll
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\refint\Exec5.dll
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.pdb
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\Exec5.genruntimeconfig.cache
+C:\Users\51134897863\Desktop\BackEnd3Sem\RevisaoC#\Exec5\obj\Debug\net10.0\ref\Exec5.dll
