@@ -1,0 +1,81 @@
+	CREATE DATABASE EventPlus_Moura;
+GO
+
+USE EventPlus_Moura;
+GO
+
+select * from ComentarioEvento;
+
+	CREATE TABLE TipoUsuario(
+
+	IdTipoUsuario	  UNIQUEIDENTIFIER	PRIMARY KEY	DEFAULT((NEWID())),
+	Titulo			  NVARCHAR(100)		NOT NULL
+
+);
+GO
+
+	CREATE TABLE TipoEvento(
+
+	IdTipoEvento	   UNIQUEIDENTIFIER	  PRIMARY KEY	DEFAULT((NEWID())),
+	Titulo			   NVARCHAR(100)	  NOT NULL
+);
+GO
+
+	CREATE TABLE Instituicao(
+ 
+	IdInstituicao	   UNIQUEIDENTIFIER	 PRIMARY KEY	DEFAULT((NEWID())),
+	Endereco		   NVARCHAR(100)	 NOT NULL,
+	Nome_Fantasia	   NVARCHAR(100)	 NOT NULL,
+	CNPJ			   NVARCHAR(14)		 NOT NULL UNIQUE
+
+);
+GO
+
+	CREATE TABLE Usuario(
+
+	IdUsuario		    UNIQUEIDENTIFIER  PRIMARY KEY	DEFAULT((NEWID())),
+	Nome			    NVARCHAR(100)	  NOT NULL,
+	Email			    NVARCHAR(256)	  NOT NULL UNIQUE,
+	Senha				NVARCHAR(60)	  NOT NULL,
+	IdTipoUsuario		UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES TipoUsuario(IdTipoUsuario)
+
+);
+GO
+
+	CREATE TABLE Evento(
+
+	IdEvento			UNIQUEIDENTIFIER  PRIMARY KEY	DEFAULT((NEWID())),
+	Nome				NVARCHAR(100)	  NOT NULL,
+	DataEvento			DATETIME		  NOT NULL,
+	Descricao			TEXT			  NOT NULL,
+	IdTipoEvento		UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES TipoEvento(IdTipoEvento),
+	IdInstituicao		UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES Instituicao(IdInstituicao)
+
+);
+GO
+
+	CREATE TABLE Presenca(
+
+	IdPresenca		   UNIQUEIDENTIFIER  PRIMARY KEY	DEFAULT((NEWID())),
+	Situacao		   BIT				 NOT NULL,
+	IdEvento		   UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES Evento(IdEvento),
+	IdUsuario		   UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES Usuario(IdUsuario)
+
+);
+GO
+
+	CREATE TABLE ComentarioEvento(
+
+	IdComentarioEvento UNIQUEIDENTIFIER	 PRIMARY KEY	DEFAULT((NEWID())),
+	DataComentario	   DATETIME			 NOT NULL,
+	Descricao		   NVARCHAR(200)	 NOT NULL,
+	Exibe			   BIT				 NOT NULL,
+	IdEvento		   UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES Evento(IdEvento),
+	IdUsuario		   UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES Usuario(IdUsuario)
+
+);
+GO
+
+
+INSERT INTO ComentarioEvento (DataComentario, Descricao, Exibe, IdEvento, IdUsuario) VALUES
+('2026/04/13', 'MUITO LEGAL', 'true', 'FAD0132E-7777-4B27-8983-76067E72B64E', 'E512D695-7D71-485E-853A-DF45F4E7076E')
