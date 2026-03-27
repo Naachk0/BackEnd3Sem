@@ -1,0 +1,24 @@
+CREATE DATABASE ConnectPlus_Moura;
+GO
+
+USE ConnectPlus_Moura;
+GO
+
+CREATE TABLE  TipoContato(
+IdTipoContato UNIQUEIDENTIFIER	PRIMARY KEY	DEFAULT((NEWID())),
+Titulo		  NVARCHAR(100)	  NOT NULL
+
+);
+GO
+
+CREATE TABLE  Contato(
+IdContato	  UNIQUEIDENTIFIER	PRIMARY KEY	DEFAULT((NEWID())),
+Nome		  NVARCHAR(100)	    NOT NULL,  
+FormaContato  NVARCHAR(256)	    NOT NULL    UNIQUE,
+Imagem		  NVARCHAR(100)	    NULL,
+IdTipoContato UNIQUEIDENTIFIER  FOREIGN KEY REFERENCES TipoContato(IdTipoContato)
+
+);
+GO
+
+DROP TABLE Contato;

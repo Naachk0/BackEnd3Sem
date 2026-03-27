@@ -74,7 +74,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\Repositories\\InstituicaoRepository.cs",
               "ViewState": "AgIAADcAAAAAAAAAAAAkwE4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T19:04:03.2Z"
+              "WhenOpened": "2026-03-20T19:04:03.2Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -86,7 +87,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\DTO\\InstituicaoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T19:03:41.455Z"
+              "WhenOpened": "2026-03-20T19:03:41.455Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -96,9 +98,10 @@
               "RelativeDocumentMoniker": "EventPlus.WebAPI\\Models\\ComentarioEvento.cs",
               "ToolTip": "C:\\Users\\51134897863\\Desktop\\BackEnd3Sem\\Event\u002B\\EventPlus.WebAPI\\EventPlus.WebAPI\\Models\\ComentarioEvento.cs",
               "RelativeToolTip": "EventPlus.WebAPI\\Models\\ComentarioEvento.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBgAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T17:44:58.074Z"
+              "WhenOpened": "2026-03-20T17:44:58.074Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -110,7 +113,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\DTO\\ComentarioEventoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T17:42:59.256Z"
+              "WhenOpened": "2026-03-20T17:42:59.256Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -122,7 +126,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\Controllers\\ComentarioEventoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T17:31:45.019Z"
+              "WhenOpened": "2026-03-20T17:31:45.019Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -134,7 +139,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\Interface\\IEventoRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T17:14:01.629Z"
+              "WhenOpened": "2026-03-20T17:14:01.629Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -144,7 +150,7 @@
               "RelativeDocumentMoniker": "EventPlus.WebAPI\\Program.cs",
               "ToolTip": "C:\\Users\\51134897863\\Desktop\\BackEnd3Sem\\Event\u002B\\EventPlus.WebAPI\\EventPlus.WebAPI\\Program.cs",
               "RelativeToolTip": "EventPlus.WebAPI\\Program.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-20T17:07:39.785Z",
               "EditorCaption": ""
@@ -157,9 +163,10 @@
               "RelativeDocumentMoniker": "EventPlus.WebAPI\\Repositories\\ComentarioRepository.cs",
               "ToolTip": "C:\\Users\\51134897863\\Desktop\\BackEnd3Sem\\Event\u002B\\EventPlus.WebAPI\\EventPlus.WebAPI\\Repositories\\ComentarioRepository.cs",
               "RelativeToolTip": "EventPlus.WebAPI\\Repositories\\ComentarioRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-20T13:25:51.44Z"
+              "WhenOpened": "2026-03-20T13:25:51.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -171,7 +178,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\Controllers\\InstituicaoController.cs",
               "ViewState": "AgIAAFEAAAAAAAAAAAAowFwAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T19:25:13.886Z"
+              "WhenOpened": "2026-03-18T19:25:13.886Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -183,7 +191,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\Controllers\\PresencaController.cs",
               "ViewState": "AgIAAIIAAAAAAAAAAAAwwJ8AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T19:02:45.813Z"
+              "WhenOpened": "2026-03-18T19:02:45.813Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -195,7 +204,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\DTO\\PresencaDTO.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAAwAkAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T18:55:05.44Z"
+              "WhenOpened": "2026-03-18T18:55:05.44Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -207,7 +217,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\Interface\\IPresencaRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T18:43:10.472Z"
+              "WhenOpened": "2026-03-18T18:43:10.472Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -219,7 +230,8 @@
               "RelativeToolTip": "EventPlus.WebAPI\\Repositories\\PresencaRepository.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCQAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:54:50.465Z"
+              "WhenOpened": "2026-03-18T17:54:50.465Z",
+              "EditorCaption": ""
             }
           ]
         }

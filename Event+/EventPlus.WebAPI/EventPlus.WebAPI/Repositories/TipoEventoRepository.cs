@@ -20,11 +20,12 @@ public class TipoEventoRepository : ITipoEventoRepository
         /// </summary>
         /// <param name="id">id do tipo evento a ser atualizado</param>
         /// <param name="tipoEvento">Novos dados do tipo evento </param>
-    public void Atualizar(Guid Id, TipoEvento tipoEvento) 
+
+    public void atualizar(Guid Id, TipoEvento tipoEvento)
     {
         var tipoEventoBuscando = _context.TipoEventos.Find(Id);
 
-        if (tipoEventoBuscando != null) 
+        if (tipoEventoBuscando != null)
         {
             tipoEventoBuscando.Titulo = tipoEvento.Titulo;
 
@@ -32,10 +33,6 @@ public class TipoEventoRepository : ITipoEventoRepository
         }
     }
 
-    public void atualizar(Guid guid, TipoEvento tipoEvento)
-    {
-        throw new NotImplementedException();
-    }
 
     /// <summary>
     /// busca um tipo de evento por id
