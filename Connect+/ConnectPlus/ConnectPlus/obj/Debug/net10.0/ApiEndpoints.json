@@ -1,16 +1,31 @@
 [
   {
     "ContainingType": "ConnectPlus.Controllers.ContatoController",
-    "Method": "Cadastrar",
+    "Method": "Post",
     "RelativePath": "api/Contato",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "contatoDTO",
-        "Type": "ConnectPlus.DTO.ContatoDTO",
-        "IsRequired": true
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FormaContato",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagem",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdTipoContato",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
@@ -19,26 +34,10 @@
     "ContainingType": "ConnectPlus.Controllers.ContatoController",
     "Method": "Listar",
     "RelativePath": "api/Contato",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ConnectPlus.Controllers.ContatoController",
-    "Method": "listarContatosEspecificos",
-    "RelativePath": "api/Contato",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -59,7 +58,7 @@
   },
   {
     "ContainingType": "ConnectPlus.Controllers.ContatoController",
-    "Method": "Atualizar",
+    "Method": "Put",
     "RelativePath": "api/Contato/{Id}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -71,8 +70,39 @@
         "IsRequired": true
       },
       {
-        "Name": "contato",
-        "Type": "ConnectPlus.Models.Contato",
+        "Name": "Nome",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FormaContato",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imagem",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "IdTipoContato",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConnectPlus.Controllers.ContatoController",
+    "Method": "listarContatosEspecificos",
+    "RelativePath": "api/Contato/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],
@@ -98,26 +128,10 @@
     "ContainingType": "ConnectPlus.Controllers.TipoContatoController",
     "Method": "Listar",
     "RelativePath": "api/TipoContato",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "ConnectPlus.Controllers.TipoContatoController",
-    "Method": "BuscarPorId",
-    "RelativePath": "api/TipoContato",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
-    "Parameters": [
-      {
-        "Name": "Id",
-        "Type": "System.Guid",
-        "IsRequired": false
-      }
-    ],
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -150,8 +164,24 @@
         "IsRequired": true
       },
       {
-        "Name": "tipoContato",
-        "Type": "ConnectPlus.Models.TipoContato",
+        "Name": "tipoContatoDTO",
+        "Type": "ConnectPlus.DTO.TipoContatoDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConnectPlus.Controllers.TipoContatoController",
+    "Method": "BuscarPorId",
+    "RelativePath": "api/TipoContato/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Guid",
         "IsRequired": true
       }
     ],

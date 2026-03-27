@@ -1,6 +1,7 @@
 ﻿using ConnectPlus.DTO;
 using ConnectPlus.Interface;
 using ConnectPlus.Models;
+using ConnectPlus.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -62,6 +63,7 @@ namespace ConnectPlus.Controllers
                 return BadRequest(e.Message);
             }
         }
+        
         /// <summary>
         /// metodo de atualizar o tipo contato
         /// </summary>
@@ -69,21 +71,19 @@ namespace ConnectPlus.Controllers
         /// <param name="contato">tipo contato com os dados atualizados</param>
         /// <returns>code 204 e o tipo contato atualizado</returns>
         [HttpPut("{Id}")]
-        public IActionResult Atualizar(Guid Id, TipoContato tipoContato)
+        public IActionResult Atualizar(Guid Id, TipoContatoDTO tipoContatoDTO)
         {
-
-            var tipoContatoAtualizado = new TipoContato
-            {
-               Titulo = tipoContato.Titulo
-            };
             try
             {
+                var tipoContato = new TipoContato
+                {
+                    Titulo = tipoContatoDTO.Titulo
+                };
                 _tipoContatoRepository.atualizar(Id, tipoContato);
-                return StatusCode(204, tipoContato);
+                return Ok("Tipo de contato atualizado.");
             }
             catch (Exception e)
             {
-
                 return BadRequest(e.Message);
             }
         }
@@ -92,6 +92,7 @@ namespace ConnectPlus.Controllers
         /// chamada para o metodo de listar os tipos de contatos
         /// </summary>
         /// <returns>Status code 200 e o tipo contato listado</returns>
+        [HttpGet]
         public IActionResult Listar()
         {
             try
@@ -110,7 +111,7 @@ namespace ConnectPlus.Controllers
         /// </summary>
         /// <param name="Id">id do tipo contato a ser listado</param>
         /// <returns>Status code 200 e o tipo contato listado</returns>
-        [HttpGet]
+        [HttpGet("{Id}")]
         public IActionResult BuscarPorId(Guid Id)
         {
             try
